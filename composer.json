@@ -1,0 +1,40 @@
+{
+  "name": "jaddek/yii-app-custom",
+  "description": "Custom app template",
+  "keywords": [
+    "yii2",
+    "api"
+  ],
+  "type": "project",
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.2.0",
+    "yiisoft/yii2": "2.0.14",
+    "yiisoft/yii2-swiftmailer": "*",
+    "yiisoft/yii2-faker": "^2.0",
+    "vlucas/phpdotenv": "^2.4"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "extra": {
+    "bootstrap": "console\\ConsoleBootstrap"
+  },
+  "autoload": {
+    "psr-4": {
+      "Admin\\": "admin/src/",
+      "Api\\": "api/src/",
+      "Common\\": "common/src/",
+      "Console\\": "console/src/",
+      "Test\\Api\\": "tests/api/src/",
+      "Test\\Common\\": "tests/common/src/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.0.0",
+    "johnkary/phpunit-speedtrap": "^3.0"
+  }
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="bootstrap.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false">
+    <testsuites>
+        <testsuite name="Bidsmart common">
+            <directory suffix="Test.php" phpVersion="7.2.0" phpVersionOperator=">=">./</directory>
+        </testsuite>
+    </testsuites>
+    <listeners>
+        <listener class="JohnKary\PHPUnit\Listener\SpeedTrapListener">
+            <arguments>
+                <array>
+                    <element key="slowThreshold">
+                        <integer>1500</integer>
+                    </element>
+                    <element key="reportLength">
+                        <integer>5</integer>
+                    </element>
+                </array>
+            </arguments>
+        </listener>
+    </listeners>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./</directory>
+        </whitelist>
+    </filter>
+</phpunit>
