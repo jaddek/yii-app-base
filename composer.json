@@ -9,7 +9,7 @@
   "minimum-stability": "stable",
   "require": {
     "php": ">=7.2.0",
-    "yiisoft/yii2": "2.0.14",
+    "yiisoft/yii2": "~2.0.15",
     "yiisoft/yii2-swiftmailer": "*",
     "yiisoft/yii2-faker": "^2.0",
     "vlucas/phpdotenv": "^2.4"
@@ -25,12 +25,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Admin\\": "admin/src/",
-      "Api\\": "api/src/",
-      "Common\\": "common/src/",
-      "Console\\": "console/src/",
-      "Test\\Api\\": "tests/api/src/",
-      "Test\\Common\\": "tests/common/src/"
+      "Admin\\": "app/admin/src/",
+      "Api\\": "app/api/src/",
+      "Common\\": "app/common/src/",
+      "Console\\": "app/console/src/",
+      "Test\\Api\\": "app/tests/api/src/",
+      "Test\\Common\\": "app/tests/common/src/"
     }
   },
   "require-dev": {
